@@ -39,8 +39,8 @@ end
 def total_gross(source)
   gross = 0
   total_index = 0
-  while total_index < directors_totals(source).size do
-    gross += directors_total(source)
+  d = directors_totals(source)
+  gross += gross_for_director(d)
   end
   
   # Write this implementation
