@@ -40,6 +40,7 @@ def total_gross(source)
   gross = 0
   total_index = 0
   d = directors_totals(source)
+  binding.pry
   gross += gross_for_director(d)
 
   
