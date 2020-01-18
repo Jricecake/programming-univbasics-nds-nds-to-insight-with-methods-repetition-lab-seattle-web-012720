@@ -37,12 +37,12 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  gross = 0
-  total_index = 0
-  d = directors_totals(source)
-  binding.pry
-  gross += gross_for_director(d)
-
+ i = 0
+ total = 0
+ while i < source.length do
+   total += directors_totals(source)[i]
+   i += 1
+ end
   
   # Write this implementation
   #
